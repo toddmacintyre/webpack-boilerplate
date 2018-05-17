@@ -1,0 +1,12 @@
+const { resolve } = require('path');
+
+module.exports = (env) => {
+  const config = {
+    entry: './src/index.js',
+    output: {
+      filename: 'bundle.js',
+      path: resolve(__dirname, 'dist'),
+    },
+  };
+  return config;
+};
